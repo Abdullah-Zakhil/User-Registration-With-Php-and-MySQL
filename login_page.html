@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login Page Upon Success</title>
+    <style>
+        .header{
+            border: 5px outset brown;
+            background-color: brown;
+            height: 90px;
+            margin-left: 100px;
+            margin-right: 100px;
+            
+        }
+        
+        .conn{
+            text-align: center;
+            color: white;
+            font-weight: bolder;
+            font-size: 25px;
+            background-color: #800000;
+            width: 260px;
+            height: 90px;
+        }
+        .footer{
+            border: 5px outset brown;
+            background-color: brown;
+            margin-left: 100px;
+            margin-right: 100px;
+            height: 40px;
+            text-align: center;
+            color: white;
+            font-weight: bolder;
+        }
+        .login{
+            border: 5px outset brown;
+            margin-left: 25%;
+            margin-right: 25%;
+            border:solid #941818;
+            border-width: 2px;
+        }
+        .tablehead{
+            border: 5px outset brown;
+            height: 65px;
+            background-color: #941818;
+            color: white;
+            font-weight: bold ;
+        }
+        h3{
+            text-align: center;
+        }
+    </style>
+</head>
+<body style = "background-color : grey">
+    <div class="header">
+        <div class="conn">
+            <br>
+            CONNECTIONS <br>
+            Get Connected
+        </div>
+    </div>
+    <br>
+    <h3>You have been successfully registered now please enter your email and password to log in </h3>
+    <div class="login">
+        <div class="tablehead">
+            <br>
+            &nbsp; &nbsp; User Login
+        </div>
+
+        <form action="main.php" method="post">
+            <table style="padding: 40px; width: 100%;">
+                <tr>
+                    <td  style=" height: 30px">Your Email ID</td>
+                    <td ><input type="text" name="email" id=""> </td>
+                    
+                </tr>
+                <tr>
+                    <td style=" height: 30px">Your Password</td>
+                    <td><input type="text" name="password" id=""> </td>
+                </tr>   
+                <tr>
+                    <td></td>
+                    <td><input type="submit" name="" id="" value="Login"> </td>
+                </tr> 
+            </table>  
+        </form>
+    </div>
+    <br>
+    <br>
+    <div class="footer">
+        <br>
+        &copy; All Rights Reserved 
+    </div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is a login and registration page</title>
+    <style>
+        .header {
+            border: 5px outset brown;
+            background-color: brown;
+            height: 90px;
+            margin-left: 100px;
+            margin-right: 100px;
+            
+        }
+        .conn {
+            text-align: center;
+            color: white;
+            font-weight: bolder;
+            font-size: 25px;
+            background-color: #800000;
+            width: 260px;
+            height: 90px;
+        }
+        .footer {
+             border: 5px outset brown;
+            background-color: brown;
+            margin-left: 100px;
+            margin-right: 100px;
+            height: 40px;
+            text-align: center;
+            color: white;
+            font-weight: bolder;
+            
+        }
+        
+        .u_registration {
+            border: 5px outset brown;
+            margin-left: 350px;
+            margin-right: 350px;
+                
+        }
+        .tablehead{
+             border: 5px outset brown;
+            height: 50px;
+            background-color: brown;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body style = "background-color : grey">
+    <div class="header">
+        <div class="conn">
+            <br>
+            <a href="register.html" style="text-decoration: none; color: white">
+                CONNECTIONS <br>
+                Get Connected
+            </a>
+        </div>
+    </div>
+    <br>
+    <div class="u_registration">
+        <div class="tablehead">
+            <br>
+            &nbsp; &nbsp; User Login
+        </div>
+
+        <form action="main.php" method="post">
+            <table style="padding: 5px; width: 100%;">
+                <tr>
+                    <td  style=" height: 10px" >Your ID</td>
+                    <td ><input type="text" name="email" id=""> </td>
+                    
+                </tr>
+                <tr>
+                    <td style=" height: 10px">Your Password</td>
+                    <td><input type="text" name="password" id=""> </td>
+                </tr>   
+                <tr>
+                    <td></td>
+                    <td><input type="submit" name="" id="" value="Login" style="float: center"> </td>
+                </tr> 
+            </table>  
+        </form>
+    </div>
+    <br>
+    <div class="u_registration">
+        <div class="tablehead">
+            <br>
+            &nbsp; &nbsp; User 
+            <u style="
+            text-decoration-line: underline;
+            text-decoration-style: single;
+            color: orange;">
+                Registration
+            </u>
+        </div>
+
+        <form action="register.php" method="post" enctype="multipart/form-data">
+            <table style="padding: 5px; width: 100%;">
+                <tr>
+                    <td  style=" height: 10px">Your Full Name:</td>
+                    <td ><input type="text" name="" id=""> </td>
+                    
+                </tr>
+                <tr>
+                    <td style=" height: 10px">Your Email Address:</td>
+                    <td><input type="text" name="email" id=""> </td>
+                </tr> 
+                <tr>
+                    <td style=" height: 10px">Your Password</td>
+                    <td><input type="text" name="password" id=""> </td>
+                </tr>   
+                <tr>
+                    <td style=" height: 10px">Your Picture</td>
+                    <td><input type="file" name="prof_pic" id=""> </td>
+                </tr>   
+                <tr>
+                    <td style=" height: 10px"></td>
+                    <td><input type="submit" value="Register" name="" id=""> </td>
+                </tr>   
+            </table>  
+        </form>
+    </div>
+    <br>
+    <div class="footer">
+        <br>
+        &copy; All Rights Reserved 
+    </div>
+</body>
+</html>
